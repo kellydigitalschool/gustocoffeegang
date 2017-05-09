@@ -3,8 +3,10 @@ nav {
 }
 
 #home_bloc {
-		background-image: url(../img/image_1.jpg);
-		background-position: center;
+		/*background-image: url(../img/image_1.jpg);*/
+		/*background-position: center;*/
+	/*background-image: url(../img/image_3.jpg);
+	background-position: bottom;*/
 		background-size: cover;
 		min-height: 100vh;
 }
@@ -16,4 +18,24 @@ nav ul a {
 
 #bloc_1, #bloc_2, #bloc_3 {
 	min-height: 100vh;
+}
+
+#bloc_2 {
+	background-color: #000;
+}
+
+.page-footer {
+  padding-top: 20px;
+  background-image: url(../img/image_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-footer .footer-copyright {
+  background: none;
+}
+
+#bloc_1 .row > div {
+	margin-top: 50vh;
+	transform: translateY(-50%);
 }

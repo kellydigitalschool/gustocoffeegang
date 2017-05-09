@@ -2,10 +2,12 @@
   <html>
     <head>
   				<meta charset="UTF-8">
+						<title>Gusto-Coffee</title>
 						<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="src/css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="src/css/style.css"  media="screen,projection"/>
+						<link href="https://fonts.googleapis.com/css?family=Arimo|Inknut+Antiqua" rel="stylesheet">
     </head>
 
     <body>
@@ -15,30 +17,87 @@
 						    <div class="nav-wrapper">
 						      <a href="#!" class="brand-logo center">Logo</a>
 						      <ul class="right hide-on-med-and-down">
+													<li class=""><a href="#">Prix</a></li>
 						        <li><a href="#">Réserver une table</a></li>
 						        <li><a href="#">Se connecter</a></li>
-						        <li class=""><a href="#">Prix</a></li>
 						      </ul>
 						    </div>
 						  </nav>
 					</div>
 
 					<section id="home_bloc">
+						<div class="carousel carousel-slider">
+								<a class="carousel-item" href="#one!"><img src="src/img/image_1.jpg"></a>
+								<a class="carousel-item" href="#two!"><img src="src/img/image_3.jpg"></a>
+								<a class="carousel-item" href="#three!"><img src="src/img/image_4.jpg"></a>
+						</div>
 
 
 					</section>
 
 					<section id="bloc_1">
 
+						<div class="row">
+		      <div class="col s12 m3 offset-m1">
+		        <div class="card-panel teal">
+		          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+		          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+		          </span>
+		        </div>
+		      </div>
+		      <div class="col s12 m3">
+		        <div class="card-panel teal">
+		          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+		          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+		          </span>
+		        </div>
+		      </div>
+		      <div class="col s12 m3">
+		        <div class="card-panel teal">
+		          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+		          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+		          </span>
+		        </div>
+		      </div>
+		    </div>
+
 
 					</section>
-					<section id="bloc_2">
+					<section id="bloc_2"></section>
 
-
-					</section>
-
+					<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2017 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="src/js/materialize.min.js"></script>
+						<script type="text/javascript">
+						$('.carousel.carousel-slider').carousel({fullWidth: true});
+						console.log("test");
+						</script>
     </body>
+
+
   </html>
