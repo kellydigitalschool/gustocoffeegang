@@ -103,7 +103,21 @@ nav ul a {
 
 .connexion_page {
 	padding: 60px 0px;
+	background-image: url(../img/image_4.jpg);
+	background-size: cover;
 }
+
+.connexion_page .card {
+    padding: 20px 20px 40px 20px;
+}
+
+.page-footer-2 {
+	padding-top: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: white;
+}
+
 
 footer,
 footer a,
