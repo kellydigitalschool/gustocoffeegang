@@ -82,6 +82,29 @@ nav ul a {
 	padding-left: 35px;
 }
 
+.section_prix {
+    padding: 70px 0px;
+}
+
+.section_prix em {
+   font-style: italic;
+   margin-left: 15px;
+   color: #323232;
+}
+
+.section_prix h2 {
+	color: #323232;
+}
+
+.connexion_page h4 {
+		font-family: 'Inknut Antiqua', sans-serif;
+		margin-bottom: 40px;
+}
+
+.connexion_page {
+	padding: 60px 0px;
+}
+
 footer,
 footer a,
 .footer-copyright {
