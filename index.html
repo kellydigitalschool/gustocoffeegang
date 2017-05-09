@@ -15,7 +15,7 @@
 					<div class="navbar-fixed">
 							<nav>
 						    <div class="nav-wrapper">
-						      <a href="index.html" class="brand-logo center">Logo</a>
+						      <a href="index.html" class="brand-logo center"><img src="src/img/logo_6.png"></a>
 						      <ul class="right hide-on-med-and-down">
 													<li class=""><a href="prix.html">Prix</a></li>
 						        <li><a href="reservation.html">Réserver une table</a></li>
@@ -27,7 +27,7 @@
 
 					<section id="home_bloc">
 
-						<span id="home_txt">I am a very simple card. I am good at <br>containing small bits of information.</span>
+						<h3 id="home_txt">I am a very simple card. I am good at <br>containing <span class="element_typed">small bits of information.</span></h3>
 						<div class="carousel carousel-slider">
 								<a class="carousel-item" href="#one!"><img src="src/img/image_1.jpg"></a>
 								<a class="carousel-item" href="#two!"><img src="src/img/image_3.jpg"></a>
@@ -126,9 +126,18 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="src/js/materialize.min.js"></script>
+						<script type="text/javascript" src="src/js/typed.js"></script>
 						<script type="text/javascript">
 						$('.carousel.carousel-slider').carousel({fullWidth: true});
 						console.log("test");
+						$(function(){
+						$(".element_typed").typed({
+							strings: ["first sentence.", "second sentence."],
+							typeSpeed: 100,
+							backSpeed: 100,
+							loop: null
+						});
+					});
 						</script>
 
     </body>
