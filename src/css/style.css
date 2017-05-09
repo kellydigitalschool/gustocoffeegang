@@ -1,0 +1,19 @@
+nav {
+	 background: #fff;
+}
+
+#home_bloc {
+		background-image: url(../img/image_1.jpg);
+		background-position: center;
+		background-size: cover;
+		min-height: 100vh;
+}
+
+nav .brand-logo,
+nav ul a {
+	color: #000;
+}
+
+#bloc_1, #bloc_2, #bloc_3 {
+	min-height: 100vh;
+}
