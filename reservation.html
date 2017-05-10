@@ -4,20 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Réservation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" type="image/png" href="src/img/logo_4.png" />
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="src/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="src/css/style.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Lato:300,400,400i" rel="stylesheet">
 </head>
 
-<body>
+<body class="resa">
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<a  href="index.html" class="brand-logo center">Logo</a>
+				<a href="index.html" class="brand-logo left" style="padding-left:20px;padding-bottom"><img src="src/img/logo_4.png"></a>
 				<ul class="right hide-on-med-and-down">
 					<li class=""><a href="prix.html">Prix</a></li>
-					<li><a href="reservation.html">Réserver une table</a></li>
+					<li><a href="reservation.html">Réserver un espace</a></li>
 					<li><a href="connexion.html">Se connecter</a></li>
 				</ul>
 			</div>
@@ -26,8 +27,94 @@
 
 	<div class="">
 		<!-- Vérification de la connexion si connecté : ok sinon affiche formulaire de connexion -->
-		<h1>Réserver une table</h1>
-	</div>
+		<h4 style="padding-left:20px;">Réservation et privatisation</h4>
+
+		<div class="row">
+    <form class="col s8">
+      <div class="row">
+	        <div class="input-field col s4">
+	          <input type="date" class="datepicker">
+	          <label for="date">01/01/17</label>
+	        </div>
+	        <div class="input-field col s4">
+	          <input type="number" class="number">
+	          <label for="number">Nombre de personnes</label>
+	        </div>
+	      </div>
+							<div class="row">
+								<div class="col s8">
+									<span>Sélectionner votre emplacement</span>
+									<img src="src/img/img.png" alt="" class="center" usemap="#Map" />
+									<map name="Map" id="Map">
+													<area id="A1" alt="" title="" href="#" shape="rect" coords="7,29,99,64" />
+													<area id="A2" alt="" title="" href="#" shape="rect" coords="8,96,96,133" />
+													<area id="A3" alt="" title="" href="#" shape="rect" coords="7,163,96,200" />
+													<area id="A4" alt="" title="" href="#" shape="rect" coords="10,227,96,264" />
+													<area id="A5" alt="" title="" href="#" shape="rect" coords="8,301,98,339" />
+													<area id="B1" alt="" title="" href="#" shape="rect" coords="144,26,368,67" />
+													<area id="B2" alt="" title="" href="#" shape="rect" coords="139,97,364,131" />
+													<area id="B3" alt="" title="" href="#" shape="rect" coords="142,158,366,196" />
+													<area id="B4" alt="" title="" href="#" shape="rect" coords="141,229,363,264" />
+													<area id="B5" alt="" title="" href="#" shape="rect" coords="139,300,363,339" />
+													<area id="C1" alt="" title="" href="#" shape="rect" coords="403,27,491,68" />
+													<area id="C2" alt="" title="" href="#" shape="rect" coords="403,93,494,133" />
+													<area id="C3" alt="" title="" href="#" shape="rect" coords="400,162,490,199" />
+													<area id="C4" alt="" title="" href="#" shape="rect" coords="402,228,491,269" />
+													<area id="C5" alt="" title="" href="#" shape="rect" coords="400,300,491,339" />
+									</map>
+								</div>
+								<div class="col s4">
+									<span>Cliquer sur l'emplacement de votre choix !</span>
+									<p>Les blocs de A1 à A5 réprésentent les salles de co-working privées qui peuvent acceuillir jusqu'à 5 personnes.</p>
+									<p>Les blocs de C1 à C5 représentent les tables principales de l'open space.</p>
+									<p>Les blocs de A1 à A5 réprésentent les salles de co-working privées qui peuvent acceuillir jusqu'à 5 personnes.</p>
+								</div>
+							</div>
+	      <div class="row">
+
+								<div class="input-field col s6">
+									<span>Restauration</span>
+										<p>
+											<input type="checkbox" id="test7" class="filled-in"/>
+											<label for="test7">Coffee bar à volonté <em>12€</em></label>
+										</p>
+										<p>
+												<input type="checkbox" id="test8" class="filled-in"/>
+												<label for="test8">Crêpes et gaufres à volonté <em>12€</em></label>
+										</p>
+										<p>
+												<input type="checkbox" class="filled-in" id="test9"/>
+												<label for="test9">Formule petit déjeuner <em>12€</em></label>
+										</p>
+										<p>
+												<input type="checkbox" class="filled-in" id="test10"/>
+												<label for="filled-in-box">Formule déjeuner <em>13,50€</em></label>
+										</p>
+										<p>
+												<input type="checkbox" class="filled-in" id="test11"/>
+												<label for="test11">Formule dîner<em> 18€</em></label>
+										</p>
+									</div>
+								<div class="input-field col s6">
+									<span>Service bureautique à disposition</span>
+									<p>
+											<input type="checkbox" id="test6" class="filled-in" checked="checked"/>
+											<label for="test6">Accès à la bibliothèque digitale<em>OFFERT</em></label>
+									</p>
+										<p>
+											<input type="checkbox" id="test5" class="filled-in"/>
+											<label for="test5">Coffee Cloud<em> 25€ pour 50 Go</em></label>
+										</p>
+										<p>
+												<input type="checkbox" id="filled-in-box" class="filled-in"/>
+												<label for="filled-in-box">Impression et scan numérique illimités</label>
+										</p>
+									</div>
+		</div>
+		<input class="waves-effect waves-light btn" type="submit" style="margin-left:20px;margin-top:30px;" value="RÉSERVER">
+	</form>
+</div>
+
 
 		<footer class="page-footer">
 			<div class="container">
@@ -58,7 +145,17 @@
 		<script type="text/javascript" src="src/js/materialize.min.js"></script>
 		<script type="text/javascript">
 		$('.carousel.carousel-slider').carousel({fullWidth: true});
-		console.log("test");
+		$( "area" ).click(function() {
+	  console.info($(this).attr('id'));
+	});
+
+	$('.datepicker').pickadate({
+			selectMonths: true, // Creates a dropdown to control month
+			selectYears: 1,
+			selectHours: true,// Creates a dropdown of 15 years to control year
+	});
+
+
 		</script>
 
 	</body>
